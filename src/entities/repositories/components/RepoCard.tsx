@@ -1,10 +1,10 @@
 import { RepositoryFragment } from '../gql/fragments/repository.graphql';
 
-interface Props {
+interface RepoCardProps {
   repo: RepositoryFragment;
 }
 
-export const RepoCard = ({ repo }: Props) => {
+export const RepoCard = ({ repo }: RepoCardProps) => {
   return (
     <div className="flex p-4 prose border rounded-lg">
       <div className="flex-1">
