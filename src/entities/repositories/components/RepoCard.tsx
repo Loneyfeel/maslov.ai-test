@@ -8,7 +8,7 @@ export const RepoCard = ({ repo }: Props) => {
   return (
     <div className="flex p-4 prose border rounded-lg">
       <div className="flex-1">
-        <a href={repo.url} className="hover:underline">
+        <a href={repo.url} target="_blank" className="hover:underline">
           <h3 className="text-lg font-bold">{repo.name}</h3>
         </a>
         {repo.description && (
